@@ -1,0 +1,40 @@
+/*
+ Theme Name:   Shrine | Storefront Child Theme
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Shrine is a WooCommerce Storefront child theme for Shrine of Hollywood Clothing.
+ Author:       Matt Ouellette
+ Author URI:   http://example.com
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         dark, responsive-layout
+ Text Domain:  shrine-storefront-child
+*/
+
+// Normalize
+@import "sass/utils/normalize";
+
+// Utilities
+// Overwrites and adds to Sass tools and helpers used in Storefront.
+@import "sass/utils/variables";
+
+// Vendors
+// Adds to external libraries and frameworks used in Storefront.
+@import "bower_components/susy/sass/susy"; // Susy: http://susydocs.oddbird.net/en/latest/
+
+// Base
+// Overwrites and adds to what Storefront calls the boilerplate code.
+@import "sass/base/base";
+@import "sass/base/typography";
+
+// Layout
+// Overwrites and adds to everything that takes part in laying out the Storefront theme.
+@import "sass/layout/layout";
+
+// Components
+// Overwrites and adds to the smaller, less global Storefront components that do not belong in /layout.
+@import "sass/components/menu";
+
+// Product Images
+@import "sass/layout/product_image";

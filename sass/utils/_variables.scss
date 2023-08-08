@@ -1,0 +1,28 @@
+// Layout
+$body-color: #333;
+$body-background: #111;
+$body-background-image: 'images/bkg-2.png';
+
+// Typography
+$text-small: 0.85em;
+$link-color: #c0c0c0;
+$link-hover-color: #c0c0c0;
+
+// Media Query Breakpoints
+$break-small: 768px;
+$break-medium: 930px;
+$break-hdr: 1125px;
+
+// Specific Navigation Media Query Breakpoints Per Design
+$break-nav-one: 840px;
+$break-nav-two: 945px;
+$break-nav-three: 1050px;
+$break-nav-four: 1100px;
+$break-nav-five: 1127px;
+$break-nav-six: 1155px;
+
+// Susy
+$susy: (
+  columns: 12,
+  gutter-position: split
+);

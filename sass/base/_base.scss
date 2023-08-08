@@ -1,0 +1,202 @@
+/**
+ * Header
+ */
+
+// adjust storefront header for Shrine layout
+.site-header {
+  background-color: transparent;
+  padding-top: 1.5em;
+}
+
+// adjust storefront header for Shrine layout
+.woocommerce-active {
+  .site-header {
+    .site-search {
+      display: none;
+    }
+    .main-navigation {
+      width: 100%;
+      float: left;
+      margin-right: 0;
+      clear: both;
+    }
+    .site-header-cart {
+      display: none;
+    }
+  }
+}
+
+.shrine-hdr-contact,
+.shrine-hdr-logo,
+.shrine-hdr-links {
+  @include span(12 of 12);
+  @media screen and (min-width: $break-small) {
+    @include span(4);
+  }
+}
+
+.shrine-hdr-contact ul,
+.shrine-hdr-links ul {
+  margin: 0 0 1.0em 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shrine-hdr-contact {
+  padding-top: 40px;
+  color: #888;
+  text-align: center;
+  font-size: 1.2em;
+  ul {
+    width: 100%;
+    li {
+      display: block;
+    }
+  }
+  .shrine-hdr-phone-ttl {
+    font-size: 1.2em;
+  }
+  .shrine-hdr-phone-number a {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    @media screen and (min-width: $break-hdr) {
+      font-size: 2.0em;
+    }
+  }
+  .shrine-hdr-hours {
+    padding-top: 8px;
+    font-size: 0.7em;
+    @media screen and (min-width: $break-hdr) {
+      font-size: 0.8em;
+    }
+  }
+  @media screen and (min-width: $break-small) {
+    padding-top: 1.0em;
+  }
+  @media screen and (min-width: $break-hdr) {
+    padding-top: 1.8em;
+  }
+}
+
+.shrine-logo {
+  margin: 0 auto;
+  @media screen and (max-width: $break-medium) {
+    width: 300px;
+  }
+}
+
+.shrine-hdr-tagline {
+  padding-top: 0.2em;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Cinzel';
+  color: #ddd;
+}
+
+.shrine-hdr-links {
+  padding-top: 1.0em;
+  text-align: center;
+  .shrine-hdr-account {
+    display: none;
+  }
+  .shrine-hdr-cart {
+    display: none;
+  }
+  @media screen and (min-width: $break-small) {
+    padding-top: 0.5em;
+    .shrine-hdr-account {
+      display: block;
+    }
+    .shrine-hdr-cart {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $break-hdr) {
+    padding-top: 2.0em;
+  }
+}
+
+.shrine-hdr-amount {
+  &:before {
+    margin-right: 0.60em;
+    font-family: FontAwesome;
+    line-height: 2.244;
+    width: 100%;
+    content: "\f07a";
+  }
+  &:after {
+    margin-right: 0.40em;
+    content: "";
+  }
+}
+
+.shrine-facebook:before,
+.shrine-pinterest:before,
+.shrine-twitter:before,
+.shrine-instagram:before {
+  margin: 0;
+  font-family: FontAwesome;
+  width: 100%;
+  font-size: 2.80em;
+}
+
+.shrine-facebook:before {
+  content: "\f082";
+}
+
+.shrine-pinterest:before {
+  content: "\f0d3";
+}
+
+.shrine-twitter:before {
+  content: "\f081";
+}
+
+.shrine-instagram:before {
+  content: "\f16d";
+}
+
+.shrine-hdr-count {
+  font-weight: 400;
+  font-size: .857em;
+  a {
+    color: $body-color;
+  }
+}
+
+/**
+ * Footer
+ */
+
+// adjust storefront footer for Shrine layout
+.site-footer {
+  margin:0;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.shrine-ftr-logo {
+  margin: 1.0em auto;
+}
+
+.shrine-ftr-nav {
+  list-style: none;
+  margin: 1.0em 0;
+}
+
+.shrine-ftr-nav li {
+  display: inline;
+  margin-right: 1.5em;
+  text-transform: uppercase;
+}
+
+.shrine-ftr-nav li:last-child {
+  margin-right: 0;
+}
+
+.shrine-ftr-nav li a {
+  font-size: 1.2em;
+  font-weight: 500;
+}

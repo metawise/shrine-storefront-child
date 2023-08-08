@@ -1,0 +1,303 @@
+/*
+ * Overwrite storefront/sass/components/_menu.scss
+ *
+ * Main Naivgation
+ */
+
+// handheld navigation toggle button
+button.menu-toggle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  margin: 0;
+  display: block;
+  width: 100%;
+  height: 50px !important;
+  text-align: left;
+  background-color: #000;
+  opacity: 1.0;
+  border: 0;
+  border-bottom: solid 1px #333;
+  &:before, &:after { // menu icon
+    background-color: transparent;
+  }
+  &:before {
+    top: 10px;
+    font-family: "FontAwesome";
+    font-size: 1.40em;
+    font-weight: 100;
+    content: "\f0c9";
+    margin-right: 0;
+    transform: none !important;
+  }
+  &:hover {
+    background-color: #000;
+    border-color: #222;
+  }
+}
+
+// handheld navigation container
+.handheld-navigation {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  margin-bottom: 0;
+  width: 100%;
+  background: #000;
+  ul {
+    margin: 0;
+  }
+}
+
+// handheld navigation menu
+.main-navigation ul {
+  margin-left: 0;
+  list-style: none;
+
+  ul {
+    display: block;
+    margin-left: 1.387em;
+  }
+
+  li {
+    border-bottom: solid 1px #222;
+    a {
+      padding: .857em 1.387em;
+      display: block;
+      color: $body-color;
+
+      &:before {
+        font-family: "FontAwesome";
+        content: "";
+        margin-right: 0;
+        font-weight: 400;
+      }
+
+      &:hover {
+        color: #e6e6e6;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $break-small) {
+  button.menu-toggle,
+  .handheld-navigation,
+  .main-navigation.toggled .handheld-navigation,
+  .main-navigation.toggled div.menu {
+    display: none;
+  }
+
+  .primary-navigation {
+    display: block;
+    padding-bottom: 1px; // fixes <li> overlap
+    width: 100%;
+  }
+
+  .main-navigation {
+    clear: both;
+    display: block;
+    width: 100%;
+
+    // first level
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      display: block;
+
+      li {
+        position: relative;
+        display: inline-block;
+        text-align: left;
+
+        a {
+          display: block;
+
+          &:before {
+            display: none;
+          }
+        }
+
+        // link hover
+        &:hover,
+        &.focus {
+          > ul {
+            left: 0;
+            display: block;
+
+            li {
+              > ul {
+                display: none; // display: none; is required to make dropdowns work on touch devices
+              }
+
+              &:hover,
+              &.focus {
+                > ul {
+                  left: 100%;
+                  top: 0;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
+      // second level
+      ul {
+        float: left;
+        position: absolute;
+        top: 100%;
+        z-index: 99999;
+        background-color: #2c2d33;
+        display: none; // display: none; is required to make dropdowns work on touch devices
+
+        li {
+          a {
+            width: 200px;
+          }
+        }
+      }
+    }
+
+  }
+
+  ul.menu {
+    li {
+      &.current-menu-item {
+        > a {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  /*
+   * Primary Navigation
+   */
+  .main-navigation {
+    padding-top: 1.0em;
+    width: 100%;
+    text-align: center;
+
+    ul.menu,
+    ul.nav-menu {
+      margin: 0 auto;
+      display: inline-block;
+      > li {
+        // The first level menu item
+        > a {
+          padding: 0 0.90em 0.5em 0.5em;
+          color: #fff;
+          font-size: 0.718em;
+          font-family: 'Cinzel';
+          @media screen and (min-width: $break-nav-one) {
+            font-size: 0.78em;
+          }
+          @media screen and (min-width: $break-nav-two) {
+            font-size: 0.906em;
+          }
+          @media screen and (min-width: $break-nav-three) {
+            font-size: 1.03em;
+          }
+          @media screen and (min-width: $break-nav-four) {
+            font-size: 1.08em;
+          }
+          @media screen and (min-width: $break-nav-five) {
+            font-size: 1.156em;
+          }
+          @media screen and (min-width: $break-nav-six) {
+            font-size: 1.156em;
+          }
+          //@media screen and (min-width: $break-nav-four) {
+          //  font-size: 14px;
+          //}
+          //@media screen and (min-width: $break-nav-three) {
+          //  font-size: 16px;
+          //}
+          //@media screen and (min-width: $break-nav-two) {
+          //  font-size: 18px;
+          //}
+          //@media screen and (min-width: $break-nav-one) {
+          //  font-size: 20px;
+          //}
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &.menu-item-has-children,
+        &.page_item_has_children {
+          &:hover {
+            &:after {
+              display: block;
+            }
+          }
+
+          > a {
+            &:after {
+              // The dropdown indicator
+              content: ""; //\f107
+              font-family: "FontAwesome";
+              margin-left: 0.50em;
+              line-height: 1;
+              font-weight: inherit;
+            }
+          }
+        }
+      }
+
+      // Subcategory Dropdown Menus
+      ul {
+        background-color: transparent;
+        margin-left: 0;
+
+        li {
+          background-color: #ccc;
+
+          a {
+            padding: .857em 1em;
+            color: #333;
+          }
+
+          &:last-child {
+            border-bottom: 0;
+          }
+
+          &.menu-item-has-children,
+          &.page_item_has_children {
+            > a {
+              &:after {
+                // The dropdown indicator
+                content: "\f105";
+                font-family: "FontAwesome";
+                float: right;
+              }
+            }
+          }
+        }
+
+        ul {
+          margin-left: 0;
+          border-top-color: transparent;
+          box-shadow: none;
+        }
+
+        a:hover,
+        li:hover > a {
+          background-color: $body-color;
+          color: #fff;
+        }
+      }
+    }
+
+    a {
+      padding: 0 1em 2.244em;
+    }
+  }
+
+}

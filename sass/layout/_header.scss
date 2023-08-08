@@ -1,0 +1,150 @@
+// adjust storefront header for Shrine layout
+// source: storefront/sass/base/base
+.site-header {
+  background-color: transparent;
+  padding-top: 1.5em;
+}
+
+// adjust storefront header for Shrine layout
+// source: storefront/sass/layout/layout
+.woocommerce-active {
+  .site-header {
+    .site-search {
+      display: none;
+    }
+    .main-navigation {
+      width: 100%;
+      float: left;
+      margin-right: 0;
+      clear: both;
+    }
+    .site-header-cart {
+      display: none;
+    }
+  }
+}
+
+.shrine-hdr-contact,
+.shrine-hdr-logo,
+.shrine-hdr-links {
+  //@include span(4);
+  //@media screen and (max-width: $break-medium-max) {
+  //  @include span(12 of 12);
+  //}
+}
+
+.shrine-hdr-contact ul,
+.shrine-hdr-links ul {
+  margin: 0 0 1.0em 0;
+  padding:0;
+  list-style: none;
+}
+
+.shrine-hdr-contact {
+  padding-top: 0.8em;
+  color: #888;
+  text-align: center;
+  font-size: 1.2em;
+
+  & ul {
+    width: 80%;
+    @media screen and (max-width: $break-medium-max) {
+      width: 100%;
+    }
+  }
+  & ul li {
+    @media screen and (max-width: $break-medium-max) {
+      display: inline;
+    }
+  }
+  .shrine-hdr-phone-ttl {
+    font-size: 1.2em;
+  }
+  .shrine-hdr-phone-number a {
+    font-size: 2.0em;
+    font-weight:400;
+    @media screen and (max-width: $break-medium-max) {
+      font-size: 1.50em;;
+    }
+  }
+  .shrine-hdr-hours {
+    font-size: 0.8em;
+  }
+}
+
+.shrine-logo {
+  margin: 0 auto;
+}
+
+.shrine-hdr-tagline {
+  padding-top: 0.2em;
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Cinzel';
+  color: #ddd;
+}
+
+.shrine-hdr-links {
+  padding-top: 2.2em;
+  text-align: center;
+  @media screen and (max-width: $break-medium-max) {
+    text-align: center;
+    & .shrine-hdr-account {
+      display: none;
+    }
+    & .shrine-hdr-cart {
+      display: none;
+    }
+  }
+}
+
+.shrine-hdr-amount {
+  &:before {
+    margin-right: 0.60em;
+    font-family: FontAwesome;
+    line-height: 2.244;
+    width: 100%;
+    content: "\f07a";
+  }
+  &:after {
+    margin-right: 0.40em;
+    content: "";
+  }
+}
+
+.shrine-facebook:before,
+.shrine-pinterest:before,
+.shrine-twitter:before,
+.shrine-instagram:before {
+  margin: 0;
+  font-family: FontAwesome;
+  width: 100%;
+  font-size: 2.5em;
+  @media screen and (max-width: $break-medium-max) {
+    font-size: 2.80em;
+  }
+}
+
+.shrine-facebook:before {
+  content: "\f082";
+}
+
+.shrine-pinterest:before {
+  content: "\f0d3";
+}
+
+.shrine-twitter:before {
+  content: "\f081";
+}
+
+.shrine-instagram:before {
+  content: "\f16d";
+}
+
+.shrine-hdr-count {
+  font-weight: 400;
+  font-size: .857em;
+  a {
+    color: $body-color;
+  }
+}

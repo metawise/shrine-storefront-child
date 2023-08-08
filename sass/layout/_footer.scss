@@ -1,0 +1,32 @@
+// adjust storefront footer for Shrine layout
+// source: storefront/sass/base/base
+.site-footer {
+  margin:0;
+  padding: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.shrine-ftr-logo {
+  margin: 1.0em auto;
+}
+
+.shrine-ftr-nav {
+  list-style: none;
+  margin: 1.0em 0;
+}
+
+.shrine-ftr-nav li {
+  display: inline;
+  margin-right: 1.5em;
+  text-transform: uppercase;
+}
+
+.shrine-ftr-nav li:last-child {
+  margin-right: 0;
+}
+
+.shrine-ftr-nav li a {
+  font-size: 1.2em;
+  font-weight: 500;
+}
