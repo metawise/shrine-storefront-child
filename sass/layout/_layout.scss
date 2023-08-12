@@ -300,3 +300,34 @@ select {
         border-bottom: 1px solid rgba(119, 119, 119, 0.2);
     }
 }
+
+
+/*
+---------------------------------
+ WooCommerce Additional Fixes
+---------------------------------
+*/
+table {
+    @media screen and (max-width:640px) {
+        &.woocommerce-checkout-review-order-table {
+            td, th {
+                padding: 0.5em 0.8em;
+            }
+            margin-bottom: 0;
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .single-product div.product {
+        overflow: visible;
+        .wpgs-nav {
+            .slick-prev {
+                left: -20px;
+            }
+            .slick-next {
+                right: -20px;
+            }
+        }
+
+    }
+}

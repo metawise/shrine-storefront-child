@@ -971,6 +971,31 @@ select {
   }
 }
 /*
+---------------------------------
+ WooCommerce Additional Fixes
+---------------------------------
+*/
+@media screen and (max-width: 640px) {
+  table.woocommerce-checkout-review-order-table {
+    margin-bottom: 0;
+  }
+  table.woocommerce-checkout-review-order-table td, table.woocommerce-checkout-review-order-table th {
+    padding: 0.5em 0.8em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .single-product div.product {
+    overflow: visible;
+  }
+  .single-product div.product .wpgs-nav .slick-prev {
+    left: -20px;
+  }
+  .single-product div.product .wpgs-nav .slick-next {
+    right: -20px;
+  }
+}
+/*
  * Overwrite storefront/sass/components/_menu.scss
  *
  * Main Naivgation
