@@ -3,6 +3,9 @@
 .site-header {
   background-color: transparent;
   padding-top: 1.5em;
+  @media screen and (max-width:768px) {
+    padding-top: 66px;
+  }
 }
 
 // adjust storefront header for Shrine layout

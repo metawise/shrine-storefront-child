@@ -8,7 +8,7 @@
  Version:      1.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         dark, responsive-layout
+ Tags:         dark, responsive-layout, modern
  Text Domain:  shrine-storefront-child
 */
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -430,6 +430,11 @@ template {
 .site-header {
   background-color: transparent;
   padding-top: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .site-header {
+    padding-top: 66px;
+  }
 }
 
 .woocommerce-active .site-header .site-search {
