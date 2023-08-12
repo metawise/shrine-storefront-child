@@ -8,7 +8,7 @@
  Version:      1.0.1
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         dark, responsive-layout, modern
+ Tags:         dark, responsive-layout
  Text Domain:  shrine-storefront-child
 */
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -1385,6 +1385,9 @@ button.menu-toggle:hover {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+}
+.single-product div.product .woocommerce-product-gallery .wpgs-nav .slick-slide img {
+  height: 144px;
 }
 
 /*# sourceMappingURL=style.css.map */
