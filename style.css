@@ -1390,4 +1390,9 @@ button.menu-toggle:hover {
   height: 144px;
 }
 
+.woocommerce-cart table.cart td.product-remove,
+.woocommerce-cart table.cart td.actions {
+  border-top-color: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */

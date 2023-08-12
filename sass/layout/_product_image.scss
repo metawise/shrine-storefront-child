@@ -163,3 +163,10 @@
 .single-product div.product .woocommerce-product-gallery .wpgs-nav .slick-slide img {
     height: 144px;
 }
+
+.woocommerce-cart {
+    table.cart td.product-remove,
+    table.cart td.actions {
+        border-top-color: transparent;
+    }
+}
