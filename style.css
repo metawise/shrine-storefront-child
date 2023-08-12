@@ -431,8 +431,9 @@ template {
   background-color: transparent;
   padding-top: 1.5em;
 }
+
 @media screen and (max-width: 768px) {
-  .site-header {
+  body:not(.admin-bar) .site-header {
     padding-top: 66px;
   }
 }
