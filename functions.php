@@ -46,20 +46,19 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
             <a href="tel://1-213-622-9656" class="text-white">(213) 622-9656</a>
           </li>
           <li class="shrine-hdr-hours">9am - 6pm PST | Monday - Friday</li>
-          <i class="cart"></i>
         </ul>
       </div>
       <div class="shrine-hdr-logo">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="shrine-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Shrine"></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class="shrine-logo" src="<?php bloginfo('stylesheet_directory'); ?>/images/logo.png" alt="Shrine Store" width="340" height="179"/></a>
         <div class="shrine-hdr-tagline">Hollywood, California</div>
       </div>
       <div class="shrine-hdr-links">
         <ul id="shrine-hdr-cart">
           <li>
-            <a href="https://www.facebook.com/ShrineofHollywood" target="_blank"><span class="shrine-facebook"></span></a> &nbsp;
-            <a href="https://www.Pinterest.com/shrinestore" target="_blank"><span class="shrine-pinterest"></span></a> &nbsp;
-            <a href="https://twitter.com/shrinestore" target="_blank"><span class="shrine-twitter"></span></a> &nbsp;
-            <a href="https://www.instagram.com/shrinehollywood" target="_blank"><span class="shrine-instagram"></span></a>
+            <a href="https://www.facebook.com/ShrineofHollywood" target="_blank" area-label="Visit our Facebook page"><span class="shrine-facebook"></span></a> &nbsp;
+            <a href="https://www.Pinterest.com/shrinestore" target="_blank" area-label="Visit our Pinterest page"><span class="shrine-pinterest"></span></a> &nbsp;
+            <a href="https://twitter.com/shrinestore" target="_blank" area-label="Visit our Twitter page"><span class="shrine-twitter"></span></a> &nbsp;
+            <a href="https://www.instagram.com/shrinehollywood" target="_blank" area-label="Visit our Instagram page"><span class="shrine-instagram"></span></a>
           </li>
           <li class="shrine-hdr-account">
             <a href="index.php?page_id=7">My Account</a>
@@ -85,7 +84,7 @@ if ( ! function_exists( 'storefront_primary_navigation' ) ) {
   function storefront_primary_navigation() {
     ?>
     <nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_html_e( 'Primary Navigation', 'storefront' ); ?>">
-      <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
+      <button class="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle"></button>
       <?php
       wp_nav_menu(
         array(
