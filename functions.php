@@ -36,10 +36,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 <center><font color="white">Free UPS ground shipping on all US orders over $200 and free priority shipping on all international orders over $600</font></center>
 <p></p><center><font color="yellow">If you are in the LA area we invite you to make an appointment to shop at the Shrine showroom and warehouse in downtown Los Angeles. We take appointments Tuesday - Saturday afternoons. Contact Us <a href="mailto:shrine@shrinestore.com">here</a></font>
 <p></p>
-
-
  <div class="shrine-hdr-contact">
-
         <ul>
           <li class="shrine-hdr-phone-ttl">Phone Orders</li>
           <li class="shrine-hdr-phone-number">
@@ -55,7 +52,8 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
       <div class="shrine-hdr-links">
         <ul id="shrine-hdr-cart">
           <li>
-            <a href="https://www.facebook.com/ShrineofHollywood" target="_blank" area-label="Visit our Facebook page"><span class="shrine-facebook"></span></a> &nbsp;
+            <a href="https://www.facebook.com/ShrineofHollywood" target="_blank" area-label="Visit our Facebook page">
+              <span class="shrine-facebook" alt="Facebook Shrine"></span></a> &nbsp;
             <a href="https://www.Pinterest.com/shrinestore" target="_blank" area-label="Visit our Pinterest page"><span class="shrine-pinterest"></span></a> &nbsp;
             <a href="https://twitter.com/shrinestore" target="_blank" area-label="Visit our Twitter page"><span class="shrine-twitter"></span></a> &nbsp;
             <a href="https://www.instagram.com/shrinehollywood" target="_blank" area-label="Visit our Instagram page"><span class="shrine-instagram"></span></a>
