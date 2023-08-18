@@ -52,11 +52,11 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
       <div class="shrine-hdr-links">
         <ul id="shrine-hdr-cart">
           <li>
-            <a href="https://www.facebook.com/ShrineofHollywood" target="_blank" area-label="Visit our Facebook page">
-              <span class="shrine-facebook" alt="Facebook Shrine"></span></a> &nbsp;
-            <a href="https://www.Pinterest.com/shrinestore" target="_blank" area-label="Visit our Pinterest page"><span class="shrine-pinterest"></span></a> &nbsp;
-            <a href="https://twitter.com/shrinestore" target="_blank" area-label="Visit our Twitter page"><span class="shrine-twitter"></span></a> &nbsp;
-            <a href="https://www.instagram.com/shrinehollywood" target="_blank" area-label="Visit our Instagram page"><span class="shrine-instagram"></span></a>
+            <a href="https://www.facebook.com/ShrineofHollywood" target="_blank" aria-label="Visit our Facebook page">
+              <span class="shrine-facebook"></span></a> &nbsp;
+            <a href="https://www.Pinterest.com/shrinestore" target="_blank" aria-label="Visit our Pinterest page"><span class="shrine-pinterest"></span></a> &nbsp;
+            <a href="https://twitter.com/shrinestore" target="_blank" aria-label="Visit our Twitter page"><span class="shrine-twitter"></span></a> &nbsp;
+            <a href="https://www.instagram.com/shrinehollywood" target="_blank" aria-label="Visit our Instagram page"><span class="shrine-instagram"></span></a>
           </li>
           <li class="shrine-hdr-account">
             <a href="index.php?page_id=7">My Account</a>
