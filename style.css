@@ -5,7 +5,7 @@
  Author:       Matt Ouellette
  Author URI:   http://example.com
  Template:     storefront
- Version:      1.0.2
+ Version:      1.0.3
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         dark, responsive-layout
@@ -996,6 +996,14 @@ select {
     right: -20px;
   }
 }
+.price del {
+  opacity: 1;
+  font-size: 1.25em;
+}
+.price del .amount {
+  font-size: 1em;
+}
+
 /*
  * Overwrite storefront/sass/components/_menu.scss
  *
