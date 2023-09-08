@@ -111,7 +111,7 @@ if ( ! function_exists( 'storefront_credit' ) ) {
   function storefront_credit() {
     ?>
     <div class="site-info">
-      <a href="index.php"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-mini.png" class="shrine-ftr-logo" alt="Shrine of Hollywood Logo"></a>
+      <a href="index.php"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo-mini.png" class="shrine-ftr-logo" alt="Shrine of Hollywood Logo" width="100" height="38"/></a>
       <?php wp_nav_menu(array(
         'container' => false,                       // remove nav container
         'container_class' => '',                    // class for container
