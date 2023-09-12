@@ -11,15 +11,15 @@
     .products.columns-4 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
     }
 
     .products.columns-3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
     }
 
     .site-main .columns-3 ul.products li.product, .page-template-template-homepage-php .site-main .columns-3 ul.products li.product, .storefront-full-width-content .site-main .columns-3 ul.products li.product {
@@ -27,7 +27,6 @@
         float: unset;
         margin-right: unset;
         flex: 1;
-        padding: 1em;
         margin: unset !important;
         // display: flex;
         justify-content: center;
@@ -38,7 +37,6 @@
         float: unset;
         margin-right: unset;
         flex: 1;
-        padding: 1em;
         margin: unset !important;
         display: flex;
         flex-direction: column;
@@ -92,8 +90,8 @@
     .products.columns-4 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
     }
 
     .products.columns-3 {
@@ -108,7 +106,6 @@
         float: unset;
         margin-right: unset;
         flex: 1;
-        padding: 1em;
         margin: unset !important;
         // display: flex;
     }
@@ -118,7 +115,6 @@
         float: unset;
         margin-right: unset;
         flex: 1;
-        padding: 1em;
         margin: unset !important;
         display: flex;
         flex-direction: column;
