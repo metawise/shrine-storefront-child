@@ -59,14 +59,12 @@
         width: 100vw;
         object-fit: cover;
         object-position: top center;
-        height: 60vh !important;
     }
 
     ul.products li.product.product-category img {
         margin-bottom: 1.618em;
         height: 100%;
         object-fit: cover;
-        height: 400px !important;
     }
 
     ul.products li.product .woocommerce-LoopProduct-link {
@@ -135,14 +133,12 @@
     body.archive ul.products li.product img, body.home ul.products li.product img {
         border: solid 1px;
         width: 100%;
-        height: 450px !important;
         object-fit: cover;
         object-position: top center;
     }
 
     ul.products li.product.product-category img {
         margin-bottom: 1.618em;
-        height: 450px !important;
         width: unset;
         object-fit: cover;
     }
