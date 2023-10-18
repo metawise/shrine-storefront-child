@@ -92,8 +92,8 @@ function simple_image_slider()
 
     <div id="slider">
         <div class="slides">
-            <?php foreach ($images as $image) : ?>
-                <div class="slide">
+            <?php foreach ($images as $index => $image) : ?>
+                <div class="slide <?php echo $index === 0 ? 'active' : ''; ?>">
                     <img src="<?php echo esc_url(trim($image)); ?>" alt="Slide" fetchpriority="high" />
                 </div>
             <?php endforeach; ?>
