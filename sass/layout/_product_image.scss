@@ -148,10 +148,7 @@
         width: unset;
         object-fit: cover;
     }
-    ul.products li.product.product-category a picture {
-        margin-bottom: 1.618em;
-        width: unset;
-        object-fit: cover;
+    ul.products li a picture {
         max-height: 400px !important;
     }
 
