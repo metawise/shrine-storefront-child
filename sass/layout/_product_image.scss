@@ -148,11 +148,11 @@
         width: unset;
         object-fit: cover;
     }
-    ul.products li.product.product-category picture {
+    ul.products li.product.product-category a picture {
         margin-bottom: 1.618em;
         width: unset;
         object-fit: cover;
-        max-height: 400px;
+        max-height: 400px !important;
     }
 
     ul.products li.product .woocommerce-LoopProduct-link {
