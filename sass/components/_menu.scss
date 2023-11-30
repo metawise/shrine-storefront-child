@@ -186,11 +186,12 @@ button.menu-toggle {
     ul.menu,
     ul.nav-menu {
       margin: 0 auto;
-      display: inline-block;
+      display: flex;
+      justify-content: space-between;
       > li {
         // The first level menu item
         > a {
-          padding: 0 0.90em 0.5em 0.5em;
+          padding: 5px 9px;
           color: #fff;
           font-size: 0.718em;
           font-family: 'Cinzel';
