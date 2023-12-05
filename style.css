@@ -1328,7 +1328,6 @@ button.menu-toggle:hover {
     flex-direction: column;
     justify-content: space-between;
     grid-auto-rows: 1fr;
-    max-height: 450px;
   }
   .storefront-product-section ul.products li.product .woocommerce-loop-product__title {
     min-height: 60px;
@@ -1349,6 +1348,9 @@ button.menu-toggle:hover {
     margin-bottom: 1.618em;
     width: unset;
     object-fit: cover;
+  }
+  ul.products li a picture {
+    max-height: 400px !important;
   }
   ul.products li.product .woocommerce-LoopProduct-link {
     display: flex;
