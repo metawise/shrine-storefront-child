@@ -1275,7 +1275,6 @@ button.menu-toggle:hover {
   }
   .wp-post-image, .attachment-shop_thumbnail, ul.products li.product img {
     border: solid 1px;
-    width: 100vw;
     object-fit: cover;
     object-position: top center;
   }
@@ -1340,7 +1339,6 @@ button.menu-toggle:hover {
   }
   body.archive ul.products li.product img, body.home ul.products li.product img {
     border: solid 1px;
-    width: 100%;
     object-fit: cover;
     object-position: top center;
   }

@@ -57,7 +57,7 @@
 
     .wp-post-image, .attachment-shop_thumbnail, ul.products li.product img {
         border: solid 1px;
-        width: 100vw;
+        // width: 100vw;
         object-fit: cover;
         object-position: top center;
     }
@@ -138,7 +138,7 @@
 
     body.archive ul.products li.product img, body.home ul.products li.product img {
         border: solid 1px;
-        width: 100%;
+        // width: 100%;
         object-fit: cover;
         object-position: top center;
     }
